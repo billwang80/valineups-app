@@ -1,0 +1,249 @@
+.header {
+  background-color: black;
+  text-align: center;
+}
+
+div {
+  font-family: Inter, sans-serif;
+}
+
+.agentSelectScreen {
+  /* min-height: 100vh; */
+  text-align: center;
+}
+
+.agentSelect {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+/* .agentPanel {
+  padding-left:50px;
+  height: 30vh;
+  overflow: hidden;
+} */
+.agentPanel {
+  display: flex;
+  overflow: hidden;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  margin-bottom: 4vh;
+  height: 30vh;
+  border-radius: 4px;
+  box-shadow: 0px 16px 32px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 16px 32px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 16px 32px 3px rgba(0, 0, 0, 0.2);
+}
+
+.agentPanel img {
+  margin-top: -3vh;
+  margin-bottom: -3vh;
+}
+
+.agentPanelTitle {
+  width: 50px;
+}
+
+.agentPanelTitle h2 {
+  transform: rotate(-270deg);
+}
+
+.agentPanel:hover {
+  opacity: 0.5;
+}
+
+.agentSelect div:nth-child(1) {
+  padding-left: 0;
+}
+
+.logo {
+  display: block;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapSelectionScreen {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.mapSelection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.valorantMap {
+  width: 25%;
+  padding-left: 20px;
+}
+
+.valorantMap img {
+  width:100%;
+}
+
+.valorantMap:hover {
+  opacity: 0.5;
+}
+
+.agentLineupsScreen {
+  min-height: 100vh;
+}
+
+.agentLineupsScreen .agentHeaderImage {
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agentLineup {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  padding: 20px 20px 20px 20px;
+  background-color: gainsboro;
+  border-radius: 25px;
+}
+
+.agentLineup .lineupInfo {
+  width: 10vw;
+  margin: 10px;
+}
+
+.agentLineup canvas {
+  height: 40vh;
+  width: 22vw;
+}
+
+.agentLineup .map {
+  margin: 10px;
+}
+.agentLineup canvas:hover {
+  opacity: 0.5;
+}
+
+.agentLineup img {
+  height: 25vh;
+  width: 18vw;
+  margin: 10px;
+}
+
+.agentLineup img:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 900px) {
+  .agentLineup {
+    display: grid;
+  }
+  .agentLineup .lineupInfo {
+    height: 30vh;
+    width: 90vw;
+  }
+  
+  .agentLineup canvas {
+    height: 70vh;
+    width: 90vw;
+  }
+  .agentLineup img {
+    height: 70vh;
+    width: 90vw;
+  }
+  .carousel-root canvas {
+    height: 70vh;
+    width: 80vw;
+  }
+}
+
+.ability_container {
+  width: 15%;
+  margin: 20px;
+  color: aliceblue;
+  background-color: black;
+}
+
+.ability_container_selected {
+  width: 15%;
+  margin: 20px;
+  color: aliceblue;
+  background-color: red;
+}
+
+.ReactModalPortal .closeModal {
+  margin-left: 99%;
+}
+
+.carousel-root {
+  background-color: black;
+}
+.filterSelectionScreen {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.filterSelection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filterMap {
+  width: 15%;
+  padding-bottom: 20px;
+  margin: 0 20px;
+  color: white;
+  background-color: black;
+}
+
+.filterMap_active {
+  width: 15%;
+  padding-bottom: 20px;
+  margin: 0 20px;
+  color: white;
+  background-color: red;
+}
+
+.filterMap img {
+  width:100%;
+}
+
+.filterMap:hover {
+  opacity: 0.5;
+}
+
+.filterSection {
+  display: flex;
+}
+
+.filterButton {
+  background-color: rgb(241, 54, 54);
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.filterOpen {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+input {
+  margin: 10px;
+}
+
+label {
+  margin: 10px;
+}
