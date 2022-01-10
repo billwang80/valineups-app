@@ -62,10 +62,10 @@ function Agent(props) {
     console.log("Store", store.getState())
     // console.log(filters)
 
-    var url = 'http://localhost:8000/lineups/?agent=' + store.getState().agent + '&gameMap=' + store.getState().map
+    var url = 'https://valineups-api.herokuapp.com/lineups/?agent=' + store.getState().agent + '&gameMap=' + store.getState().map
 
     function dispatchFilters() {
-        url = 'http://localhost:8000/lineups/?agent=' + store.getState().agent + '&gameMap=' + store.getState().map
+        url = 'https://valineups-api.herokuapp.com/lineups/?agent=' + store.getState().agent + '&gameMap=' + store.getState().map
         for (const [ikey, ivalue] of Object.entries(filters)) {            
             url += '&' + ikey + '__in='
             // for (const [jkey, jvalue] of Object.entries(filters[ikey])) {
