@@ -59,30 +59,23 @@ function Agent(props) {
     })
     const [showFilter, setShowFilter] = useState(false)
 
-    console.log("Store", store.getState())
-    // console.log(filters)
-
     var url = 'http://localhost:8000/lineups/?agent=' + store.getState().agent + '&gameMap=' + store.getState().map
 
     function dispatchFilters() {
         url = 'http://localhost:8000/lineups/?agent=' + store.getState().agent + '&gameMap=' + store.getState().map
         for (const [ikey, ivalue] of Object.entries(filters)) {            
             url += '&' + ikey + '__in='
-            // for (const [jkey, jvalue] of Object.entries(filters[ikey])) {
             for (const [jkey, jvalue] of Object.entries(ivalue)) {    
                 if (jvalue.val) {
                     url += jvalue.str + ','
                 }
             }
         }
-
-        console.log(url)
         
         fetch(url)
             .then(response => response.json())
             .then((data) => {
                 setLineups(data)
-                console.log('data', data)
             })
 
         setShowFilter(false)
@@ -93,7 +86,6 @@ function Agent(props) {
             .then(response => response.json())
             .then((data) => {
                 setLineups(data)
-                console.log('data', data)
             })
     }, [])
 

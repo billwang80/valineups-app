@@ -13,12 +13,10 @@ const maps = [
   ]
 
 function Maps(props) {
-    // const agent = props.location.state.agent
-    // console.log("Store", store.getState())
     const mapSelection = maps.map((valorantMap) => 
         <ValorantMap key={valorantMap.name} name={valorantMap.name} link="/maps" imgurl={valorantMap.image} />
     );
-    //console.log(props)
+    
     return (
         <div className="mapSelectionScreen">
             <Header />
