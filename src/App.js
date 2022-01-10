@@ -9,24 +9,6 @@ import Maps from "./components/MapsPage"
 import Agent from"./components/LineupsPage"
 import LocationAbility from './components/LocationAbilityPage'
 
-// function App() {
-//   return (
-//     <Router>
-//       <Switch>
-//         <Route exact path="/">
-//           <AgentSelect agents={agents} />
-//         </Route>
-//         <Route exact path="/Maps">
-//           <Maps maps={maps}/>
-//         </Route>
-//         <Route exact path="/Sova">
-//           <Agent />
-//         </Route>
-//       </Switch>
-//     </Router>
-//   );
-// }
-
 function App() {
   return (
     <Provider store={store}>
