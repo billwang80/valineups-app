@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import ValorantMap from "./ValorantMap"
 import Header from './Header'
-import store from "../store/store"
 
 const maps = [
     {name: "Ascent", image: "images/Loading_Screen_Ascent.png"},
@@ -12,7 +11,7 @@ const maps = [
     {name: "Split", image: "images/Loading_Screen_Split.png"}
   ]
 
-function Maps(props) {
+function Maps() {
     const mapSelection = maps.map((valorantMap) => 
         <ValorantMap key={valorantMap.name} name={valorantMap.name} link="/maps" imgurl={valorantMap.image} />
     );

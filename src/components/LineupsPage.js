@@ -5,7 +5,7 @@ import store from "../store/store"
 import * as constants from '../constants'
 import ReactModal from 'react-modal';
 
-function Agent(props) {
+function Agent() {
     const [lineups, setLineups] = useState([{
         lineup_id: '',
         agent: "",
