@@ -13,7 +13,7 @@ const agents = [
     {name: "Viper", panel: "images/Valorant_Viper_Card.jpeg"}
   ]
 
-function AgentSelect(props) {
+function AgentSelect() {
     const agentSelectionPanels = agents.map((agent) => 
         <AgentPanel key={agent.name} name={agent.name} link="/maps" imgurl={agent.panel} />
     );
