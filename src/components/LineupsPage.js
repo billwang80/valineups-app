@@ -20,6 +20,9 @@ function Agent() {
         abilityLocation: "",
         abilityX: 0,
         abilityY: 0,
+        abilityLocationUrl: "",
+        agentLocationUrl: "",
+        crosshairUrl: "",
         url: "",
     }])
 
@@ -167,7 +170,7 @@ function Agent() {
                         abilityVals.map((field) => 
                         <div>
                             <input type="checkbox" id={field} onClick={() => changeFilter('ability', field)} checked={filters.ability[field].val}/>
-                            <label for={field}>{filters.ability[field].str}</label>
+                            <label for={field}>{filters.ability[field].str.replace('_', ' ')}</label>
                         </div>)
                     }
                     </div>
@@ -177,7 +180,7 @@ function Agent() {
                         sideVals.map((field) => 
                         <div>
                             <input type="checkbox" id={field} onClick={() => changeFilter('side', field)} checked={filters.side[field].val}/>
-                            <label for={field}>{filters.side[field].str}</label>
+                            <label for={field}>{filters.side[field].str.replace('_', ' ')}</label>
                         </div>)
                     }
                     </div>
@@ -187,17 +190,17 @@ function Agent() {
                         roundPhaseVals.map((field) => 
                         <div>
                             <input type="checkbox" id={field} onClick={() => changeFilter('roundPhase', field)} checked={filters.roundPhase[field].val}/>
-                            <label for={field}>{filters.roundPhase[field].str}</label>
+                            <label for={field}>{filters.roundPhase[field].str.replace('_', ' ')}</label>
                         </div>)
                     }
                     </div>
                     <h2>Agent Location</h2>
-                    <div className='filterSection'>
+                    <div className='filterSection mapLocations'>
                     {
                         agentLocationVals.map((field) => 
                         <div>
                             <input type="checkbox" id={field} onClick={() => changeFilter('agentLocation', field)} checked={filters.agentLocation[field].val}/>
-                            <label for={field}>{filters.agentLocation[field].str}</label>
+                            <label for={field}>{filters.agentLocation[field].str.replace('_', ' ')}</label>
                         </div>)
                     }
                     </div>
@@ -207,17 +210,17 @@ function Agent() {
                         abilitySiteVals.map((field) => 
                         <div>
                             <input type="checkbox" id={field} onClick={() => changeSiteFilter('abilitySite', field)} checked={filters.abilitySite[field].val}/>
-                            <label for={field}>{filters.abilitySite[field].str}</label>
+                            <label for={field}>{filters.abilitySite[field].str.replace('_', ' ')}</label>
                         </div>)
                     }
                     </div>
                     <h2>Ability Location</h2>
-                    <div className='filterSection'>
+                    <div className='filterSection mapLocations'>
                     {
                         abilityLocationVals.map((field) => 
                         <div>
                             <input type="checkbox" id={field} onClick={() => changeFilter('abilityLocation', field)} checked={filters.abilityLocation[field].val}/>
-                            <label for={field}>{filters.abilityLocation[field].str}</label>
+                            <label for={field}>{filters.abilityLocation[field].str.replace('_', ' ')}</label>
                         </div>)
                     }
                     </div>
