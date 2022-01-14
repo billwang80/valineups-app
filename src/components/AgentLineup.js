@@ -58,10 +58,6 @@ function AgentLineup(props) {
                     <img src={props.lineup.crosshairUrl} alt='' />
                 </Carousel>
             </ReactModal>
-            {/* <MapLineupLocations mapSrc='images/Ascent_Callouts.jpeg' agentX={props.lineup.agentX} agentY={props.lineup.agentY} abilityX={props.lineup.abilityX} abilityY={props.lineup.abilityY} abilityRad={75}/>
-            <img src={'images/' + props.lineup.agent + '/' + props.lineup.gameMap + '/AbilityLocation/' + props.lineup.lineup_id + '.png' } alt = ''/>
-            <img src={'images/' + props.lineup.agent + '/' + props.lineup.gameMap + '/AgentPosition/' + props.lineup.lineup_id + '.png'} alt = 'No Position Available'/>
-            <img src={'images/' + props.lineup.agent + '/' + props.lineup.gameMap + '/Crosshair/' + props.lineup.lineup_id + '.png'} alt = ''/> */}
         </div>
     )
 }
