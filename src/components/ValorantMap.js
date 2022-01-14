@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import store from "../store/store"
+import {store} from "../store/store"
 
 function ValorantMap(props) {
     function dispatchMap() {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import AgentLineup from './AgentLineup'
 import Header from './Header'
-import store from "../store/store"
+import {store} from "../store/store"
 import * as constants from '../constants'
 import ReactModal from 'react-modal';
 
