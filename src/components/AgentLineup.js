@@ -52,7 +52,7 @@ function AgentLineup(props) {
                             </button>
                         )
                     }>
-                    <MapLineupLocations mapSrc='images/Ascent_Callouts.jpeg' agentX={props.lineup.agentX} agentY={props.lineup.agentY} abilityX={props.lineup.abilityX} abilityY={props.lineup.abilityY} abilityRad={abilityRads[props.lineup.ability]} height={1000} width={1000} />
+                    <MapLineupLocations mapSrc='images/Ascent_Callouts.jpeg' agent={props.lineup.agent} agentX={props.lineup.agentX} agentY={props.lineup.agentY} abilityX={props.lineup.abilityX} abilityY={props.lineup.abilityY} abilityRad={abilityRads[props.lineup.ability]} height={1000} width={1000} />
                     <img src={props.lineup.abilityLocationUrl} alt='' />
                     <img src={props.lineup.agentLocationUrl} alt='No Position Available' />
                     <img src={props.lineup.crosshairUrl} alt='' />
