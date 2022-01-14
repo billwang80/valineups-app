@@ -162,6 +162,7 @@ div {
 
 .carousel-root {
   background-color: black;
+  height: 100%;
 }
 
 .carousel-root div{
